@@ -1,0 +1,93 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-overlay.mostrar {
+    display: flex;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 60px;
+    max-width: 500px;
+    width: 100%;
+
+    position: relative;
+}
+
+.close-button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    font-size: 24px;
+    background-color: #3c3c3c;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.modal-content h2 {
+    font-family: "Merriweather", serif;
+    color: rgb(54, 54, 54);
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    text-align: left;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #545454;
+    margin-bottom: 20px;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content form button {
+    width: 15%;
+    padding: 10px;
+    background-color: #ff6e6e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    align-items: left;
+}
+
+.modal-content form button:hover {
+    background-color: #e44b4b;
+}
+
+.sumit{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e26e67;
+    color: #fff;
+    text-decoration: none;
+
+    font-weight: bold;
+}
